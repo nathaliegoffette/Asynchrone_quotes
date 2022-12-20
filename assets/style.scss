@@ -1,0 +1,91 @@
+$Quicksand : 'Quicksand', sans-serif;
+$DarkBlue : rgb(36, 36, 49);
+$LightBlue:#A9C9FF;
+
+body {
+    display:flex;
+    margin-top: 0;
+	margin-left: 0;
+    background-color: $LightBlue ;  
+    /*background-color: rgb(241, 236, 160);*/
+}
+
+main {
+    margin:auto;
+}
+
+.Response{
+    font-family: $Quicksand;
+    font-size: 2rem;
+    font-style: italic;
+    
+}
+
+.Author{
+    font-family: $Quicksand;
+    font-size: 1.2rem;
+    font-weight:700;
+    margin-left:50%;
+}
+
+#bNewQuote{
+    display:flex;
+    justify-content: center;
+    background-color: $DarkBlue ;
+	border-radius: 12px;
+	border: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+	color: rgb(247, 232, 191);
+	font-size: 1rem;
+	margin: auto;
+	text-align: center;
+}
+
+
+.Img{
+    display : flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto ;
+    padding : 10vw;
+    width : 40vw;
+    height: auto;
+    border-radius:20vw;
+}
+
+@media screen and (480px < width <1024px){
+   
+}
+
+@media screen and (width > 1024px){
+    #bNewQuote{
+        display:flex;
+        justify-content: center;
+        background-color: $DarkBlue ;
+        border-radius: 12px;
+        border: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: rgb(247, 232, 191);
+        font-size: 1rem;
+        text-align: center;  
+    }
+     
+    .Response{
+        width : 50vw;
+        display : flex;
+        justify-content: center;
+    }
+
+    .Img{
+        width: 20vw;
+        display : flex;
+        justify-content: center;
+    }
+}
